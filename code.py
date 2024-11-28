@@ -150,3 +150,69 @@
 # n = int(input())
 # ans = productNum(n)
 # print(f"{ans} is product of {n} number")
+
+# 13. program for check number is armstrong number or not
+
+# def counter(n):
+#     count = 0
+#     while(n):
+#         b = n%10
+#         count = count+1
+#         n = n//10
+#     return count
+# def armStrong(n):
+#     original = n
+#     count = counter(n)
+#     value = 0
+#     while(n):
+#         b = n%10
+#         value = value+pow(b, count)
+#         n = n//10
+#     return value == original
+# n = int(input())
+# if(armStrong(n)):
+#     print(f"{n} is armstrong ")
+# else:
+#     print(f"{n} not strong muber")
+
+# 14. program for check number is Disarium number or not
+
+# def counter(n):
+#     count = 0
+#     while(n):
+#         b = n%10
+#         count = count+1
+#         n = n//10
+#     return count
+# def DisariumNUm(n):
+#     original = n
+#     count = counter(n)
+#     value = 0
+#     while(n):
+#         b = n%10
+#         value = value+pow(b, count)
+#         n = n//10
+#         count = count-1
+#     return value == original
+# n = int(input())
+# if(DisariumNUm(n)):
+#     print(f"{n} is Disarium ")
+# else:
+#     print(f"{n} not Disarium muber")
+
+#15. program for check number is SPY number or not
+
+# def SpyNum(n):
+#     Sum = 0
+#     product = 1
+#     while(n):
+#         b =n%10
+#         Sum = Sum+b 
+#         product = product * b
+#         n= n//10
+#     return Sum == product
+# n = int(input())
+# if(SpyNum(n)):
+#     print(f"{n} is spy number")
+# else:
+#     print("not a spy number")
