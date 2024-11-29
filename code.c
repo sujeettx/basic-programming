@@ -374,3 +374,88 @@
 //     }
 //     return 0;
 // } 
+
+//15. program for check number is sunny number or not
+// #include<stdio.h>
+// #include<math.h>
+// int main(){
+//     int n ;
+//     int sunny;
+//     float ans;
+//     scanf("%d",&n);
+//     sunny = n+1;
+//     ans = sqrt(sunny);
+//     if(ans == (int)ans)
+//     {
+//          printf("sunny number");
+//     }
+//     else
+//     {
+//         printf("not a sunny number");
+//     }
+//     return 0;
+// }
+
+// 16. program for check number is prime number or not
+// #include<stdio.h>
+// #include<math.h>
+// #include<stdbool.h>
+
+// bool CheckPrine(int value){
+//     if(value<=0){
+//         return false;
+//     }
+//     int square = sqrt(value);
+//     int i = 2;
+//     while(i<=square){
+//         if(value%i==0)
+//         {
+//             return false;
+//         }
+//         i++;
+//     }
+//     return true;
+// }
+// int main(){
+//     int n;
+//     scanf("%d",&n);
+//     if(CheckPrine(n)){
+//         printf("%d is prime number",n);
+//     }
+//     else{
+//         printf("%d is not a prime number",n);
+//     }
+//     return 0;
+// }
+
+// same code using for loop 
+
+// #include<stdio.h>
+// #include<math.h>
+// #include<stdbool.h>
+
+// bool CheckPrine(int value){
+//     if(value<=0){
+//         return false;
+//     }
+//     int square = sqrt(value);
+//     int i = 2;
+//     for(i;i<=square;i++){
+//         if(value%i==0)
+//         {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+// int main(){
+//     int n;
+//     scanf("%d",&n);
+//     if(CheckPrine(n)){
+//         printf("%d is prime number",n);
+//     }
+//     else{
+//         printf("%d is not a prime number",n);
+//     }
+//     return 0;
+// }
