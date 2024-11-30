@@ -459,3 +459,33 @@
 //     }
 //     return 0;
 // }
+
+// same code without any additional function 
+// #include <stdio.h>
+// #include<math.h>
+
+// int main() {
+//     int n;
+//     scanf("%d",&n);
+//     if(n<=1){
+//         printf("not prime");
+//     }
+//     else{
+//         int square = sqrt(n);
+//         int i = 2, flag = 0;
+//         while(i<=square)
+//         {
+//             if(n%i==0){
+//                 printf("not ptime ");
+//                 flag = 1;
+//                 break;
+//             }
+//             i++;
+//         }
+//         if(flag==0){
+//             printf("prime number");
+//         }
+//     }
+//     return 0;
+// }
+

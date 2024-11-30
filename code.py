@@ -216,3 +216,27 @@
 #     print(f"{n} is spy number")
 # else:
 #     print("not a spy number")
+
+# 16 . program for check number is prime or not 
+
+# import math
+# def primeNum(n):
+#     if(n<=0):
+#        return False
+#     else:
+#         square = math.sqrt(n)
+#         i  =2
+#         while(i<=square):
+#             if(n%i==0):
+#                 return False
+#             i = i+1
+#         return True
+
+# n = int(input())
+# if(primeNum(n)):
+#     print("prime number")
+# else:
+#     print("not prime")
+
+        
+        
