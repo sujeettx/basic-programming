@@ -489,3 +489,34 @@
 //     return 0;
 // }
 
+// 17.fibonacciseries program
+
+// #include <stdio.h>
+
+// void fibnakiiseries(int n) {
+//     if (n == 0) {
+//         printf("0\n");
+//     } else if (n == 1) {
+//         printf("0 1\n");
+//     } else {
+//         int a = 0;
+//         int b = 1;
+//         printf("0 1 "); // Print the first two numbers
+//         n = n - 2;
+//         while (n) {
+//             int c = a + b;
+//             printf("%d ", c);
+//             a = b;
+//             b = c;
+//             n = n - 1;
+//         }
+//         printf("\n"); // Move to the next line after printing the series
+//     }
+// }
+
+// int main() {
+//     int n;
+//     scanf("%d", &n);
+//     fibnakiiseries(n);
+//     return 0;
+// }

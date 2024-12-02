@@ -33,3 +33,33 @@ let PrimeNumCheck = (n)=>{
 //     return sum;
 // }
 // console.log(sumof(12345678910));
+//  program to print Fibanacci Sequence by using iteration
+
+let FibanacciSequence = (n)=>{
+    if(n==1){
+        console.log(0);
+    }
+    else if(n==1){
+        console.log(0);
+        console.log(1);  
+    }
+    else{
+        let a = 0;
+        let b = 1;
+        console.log(0);
+        console.log(1);
+        n = n-2;
+        while(n){
+            c = a+b;
+            console.log(c);      
+            a = b
+            b = c;
+            n = n-1
+        }
+    }
+}
+
+FibanacciSequence()
+console.log(105*105);
+
+
