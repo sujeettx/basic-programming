@@ -520,3 +520,34 @@
 //     fibnakiiseries(n);
 //     return 0;
 // }
+
+// program for chrck numer is present in fibnakiiseries or not
+// #include <stdio.h>
+// #include <stdbool.h>
+// #include <math.h>
+
+// bool checknum(int n) {
+//     double a, b;
+
+//     a = sqrt(5 * (n * n) + 4);
+//     b = sqrt(5 * (n * n) - 4);
+
+//     if (a == (int)a || b == (int)b) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+// int main() {
+//     int n;
+//     scanf("%d", &n);
+//     printf("%d", checknum(n));
+//     // if (checknum(n)) {
+//     //     printf("%d is present in the Fibonacci series.\n", n);
+//     // } else {
+//     //     printf("%d is not present in the Fibonacci series.\n", n);
+//     // }
+
+//     return 0;
+// }
