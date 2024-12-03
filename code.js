@@ -59,7 +59,53 @@ let FibanacciSequence = (n)=>{
     }
 }
 
-FibanacciSequence()
-console.log(105*105);
+// FibanacciSequence()
+console.log();
 
 
+
+// lowest common factor
+
+let lcmcalculate = (a,b)=>{
+    if(a==b){
+        return a;
+    }
+    let max;
+    if(a>b){
+        max = a;
+    }
+    else{
+        max = b;
+    }
+    let i = max;
+    while(true){
+       if(max%a==0 && max%b==0){
+        return max;
+       }
+       max =  max+i;
+    }
+}
+
+// console.log(lcmcalculate(12,10))
+
+// program for check automafic number 
+
+let marfic = (n)=>{
+    let square = n*n;
+    while(n){
+        if(n%10 != square%10){
+            return false;
+        }
+        n = Math.floor(n/10);
+        square =Math.floor(square/10);
+    }
+    return true;
+}
+
+let ans = marfic(25)
+if(ans){
+    console.log("automarfic");
+}
+else{
+    console.log("not automarfic");
+}
