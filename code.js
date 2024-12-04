@@ -150,8 +150,8 @@ let program = (n)=>{
         }
     }
     else{
-        let product = productofnum(n);
-        if(checknumevenodd(product)){
+        // let product = productofnum(n);
+        if(checknumevenodd(productofnum(n))){
             console.log("even");      
         }
         else{
@@ -217,6 +217,85 @@ let program2 = (n)=>{
         }
     }
 }
-console.log(program2(4543));
+// console.log(program2(24));
 
+
+//  program 3
+
+let spynumber = (n)=>{
+    if(productofnum(n) == sumofdigit(n)){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+// console.log(spynumber(22));
+let counter = (n)=>{ 
+ let count = 0;
+   while(n){
+    n = Math.floor(n/10)
+    count++
+   }
+    return count;
+}
+
+let armstrong = (n)=>{
+    let original = n;
+    let count = counter(n)
+    let answer = 0;
+    while(n){
+        let b = Math.floor(n%10);
+        answer = answer +Math.pow(b,count)
+        n = Math.floor(n/10);
+    }
+    if(answer==original){
+        return true
+    }
+    else{
+        return false;
+    }
+}
+
+let program3 = (n)=>{
+    if(spynumber(n)){
+        let sum = sumofdigit(n);
+        if(checknumevenodd(sum)){
+            if(armstrong(sum)){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        else{
+            if(prime(sum)){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+    }
+    else{
+        let produ = productofnum(n);
+        if(checknumevenodd(produ)){
+            if(armstrong(produ)){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        else{
+            if(prime(produ)){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+    }
+}
+console.log(program3(22));
 
