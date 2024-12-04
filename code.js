@@ -66,25 +66,25 @@
 
 // // lowest common factor
 
-// let lcmcalculate = (a,b)=>{
-//     if(a==b){
-//         return a;
-//     }
-//     let max;
-//     if(a>b){
-//         max = a;
-//     }
-//     else{
-//         max = b;
-//     }
-//     let i = max;
-//     while(true){
-//        if(max%a==0 && max%b==0){
-//         return max;
-//        }
-//        max =  max+i;
-//     }
-// }
+let lcmcalculate = (a,b)=>{
+    if(a==b){
+        return a;
+    }
+    let max;
+    if(a>b){
+        max = a;
+    }
+    else{
+        max = b;
+    }
+    let i = max;
+    while(true){
+       if(max%a==0 && max%b==0){
+        return max;
+       }
+       max =  max+i;
+    }
+}
 
 // console.log(lcmcalculate(12,10))
 
@@ -299,3 +299,25 @@ let program3 = (n)=>{
 }
 console.log(program3(22));
 
+
+// progrM3
+
+let fect = (n)=>{
+    if(n==0 || n==1){
+        return 1;
+    }
+    else{
+        return n*fect(n-1);
+    }
+}
+
+let program4= (n)=>{
+    let fact = fect(n);
+    let lcm = lcmcalculate(fact,10);
+    if(prime(lcm)){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
