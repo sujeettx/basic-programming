@@ -240,3 +240,14 @@
 
         
         
+# sum of array element 
+# cook your dish here
+# def sumOfArry(n,arr):
+#     sum = 0;
+#     for i in range (n):
+#         sum = sum+arr[i]
+#     return sum;
+# n = int(input())
+# arr = list(map(int,input().split()))
+# ans = sumOfArry(n,arr)
+# print(ans)

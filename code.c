@@ -551,3 +551,28 @@
 
 //     return 0;
 // }
+
+
+// sum of array elements
+// #include <stdio.h>
+
+// int sumOfarry(int n, int arr[]){
+//      int sum= 0,i;
+//     for(i=0;i<n;i++){
+//         sum+=arr[i];
+//     }
+//     return sum;
+// }
+
+// int main() {
+//     int n,i,ans;
+//     scanf("%d",&n);
+//     int arr[n];
+//     for(i=0;i<n;i++){
+//         scanf("%d",&arr[i]);
+//     }
+//     ans = sumOfarry(n,arr);
+//     printf("%d",ans);
+//     return 0;
+// }
+

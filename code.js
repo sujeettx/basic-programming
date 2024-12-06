@@ -184,7 +184,7 @@ let palindrone = (n)=>{
 
 let prime = (n)=>{
     if(n<=1){
-        return true;
+        return false;
     }
     let sqare = Math.floor(Math.sqrt(n));
     for(let i =2;i<=sqare;i++){
@@ -297,7 +297,7 @@ let program3 = (n)=>{
         }
     }
 }
-console.log(program3(22));
+// console.log(program3(22));
 
 
 // progrM3
@@ -321,3 +321,20 @@ let program4= (n)=>{
         return false;
     }
 }
+
+// nth number of prime number
+let nthPrime = (n)=>{
+    let count = 0;
+    let x = 2;
+    while(true){
+        if(prime(x)){
+            count++
+        }
+        if(count == n){
+            return x;
+        }
+        x++;
+    }
+}
+
+console.log(nthPrime(4));
