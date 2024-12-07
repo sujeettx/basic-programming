@@ -288,3 +288,129 @@
 //     }
 //     return 0;
 // }
+
+ // 16. Program to check if a number is a Sunny number
+// #include <iostream>
+// #include <cmath>
+// using namespace std;
+
+// int main() {
+//     int n, sunny;
+//     float ans;
+//     cin >> n;
+//     sunny = n + 1;
+//     ans = sqrt(sunny);
+//     if (ans == static_cast<int>(ans)) {
+//         cout << "Sunny number";
+//     } else {
+//         cout << "Not a Sunny number";
+//     }
+//     return 0;
+// }
+
+ // 17. Program to check if a number is a prime number
+// #include <iostream>
+// #include <cmath>
+// using namespace std;
+
+// bool CheckPrime(int value) {
+//     if (value <= 1) {
+//         return false;
+//     }
+//     int square = sqrt(value);
+//     for (int i = 2; i <= square; i++) {
+//         if (value % i == 0) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// int main() {
+//     int n;
+//     cin >> n;
+//     if (CheckPrime(n)) {
+//         cout << n << " is a prime number";
+//     } else {
+//         cout << n << " is not a prime number";
+//     }
+//     return 0;
+// }
+
+// 18. Program to print Fibonacci series
+// #include <iostream>
+// using namespace std;
+
+// void fibonacciSeries(int n) {
+//     if (n == 0) {
+//         cout << "0\n";
+//     } else if (n == 1) {
+//         cout << "0 1\n";
+//     } else {
+//         int a = 0, b = 1;
+//         cout << "0 1 ";
+//         n -= 2;
+//         while (n) {
+//             int c = a + b;
+//             cout << c << " ";
+//             a = b;
+//             b = c;
+//             n--;
+//         }
+//         cout << endl;
+//     }
+// }
+
+// int main() {
+//     int n;
+//     cin >> n;
+//     fibonacciSeries(n);
+//     return 0;
+// }
+
+ // 19. Program to check if a number is in the Fibonacci series
+// #include <iostream>
+// #include <cmath>
+// using namespace std;
+
+// bool checkNum(int n) {
+//     double a = sqrt(5 * n * n + 4);
+//     double b = sqrt(5 * n * n - 4);
+//     return a == static_cast<int>(a) || b == static_cast<int>(b);
+// }
+
+// int main() {
+//     int n;
+//     cin >> n;
+//     if (checkNum(n)) {
+//         cout << n << " is present in the Fibonacci series.";
+//     } else {
+//         cout << n << " is not present in the Fibonacci series.";
+//     }
+//     return 0;
+// }
+
+// 20. Program to calculate the sum of array elements
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+
+// int sumOfArray(int n, const vector<int>& arr) {
+//     int sum = 0;
+//     for (int i = 0; i < n; i++) {
+//         sum += arr[i];
+//     }
+//     return sum;
+// }
+
+// int main() {
+//     int n, ans;
+//     cin >> n;
+//     vector<int> arr(n);
+//     for (int i = 0; i < n; i++) {
+//         cin >> arr[i];
+//     }
+//     ans = sumOfArray(n, arr);
+//     cout << "Sum of array elements is " << ans;
+//     return 0;
+// }

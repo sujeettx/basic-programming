@@ -54,11 +54,11 @@ let sumofnAtural = (n)=>{
 
 // using math formula
 
-let sumofnaturalk = (n)=>{
+let sumofnatural = (n)=>{
    let sum = (n*(n+1))/2;
     return sum
 }
-// console.log(sumofnaturalk(5));
+// console.log(sumofnatural(5));
 
 // program of sum of square of nnatural numbers
 
@@ -67,4 +67,67 @@ let sumofsquarenatural = (n)=>{
     return sum;
 }
 
-console.log(sumofsquarenatural(5))
+// console.log(sumofsquarenatural(5))
+
+// sum of cubes of first n natural number
+
+let sumOfCubes = (n)=>{
+    let sum = Math.pow((n*(n+1))/2,2);
+    return sum;
+}
+
+// console.log(sumOfCubes(3));
+
+// program to check number is divisible by 8 or not
+num8divide = (n)=>{
+    return (n%8==0)
+}
+
+// console.log(num8divide(24));
+
+// greatest of 4 numbers 
+
+GreatestOf4 = (a,b,c,d)=>{
+    let arr = [a,b,c,d];
+    let max = arr[0];
+    for(let i = 1;i < arr.length;i++){
+        if(arr[i]>max){
+            max = arr[i];
+        }
+    }
+    return max;
+}
+
+// console.log(GreatestOf4(10,40,50,50));
+
+
+// grade system 
+
+let gradeSystem = (grade)=>{
+    if(grade>90 && grade<=100){
+        return console.log("A+");   
+    }
+    else if(grade>80 && grade<=90){
+        return console.log("A");  
+    }
+    else if(grade>70 && grade<=80){
+        return console.log("B+");
+        
+    }
+    else if(grade>60 && grade<=70){
+        return console.log("B");
+        
+    }
+    else if (grade>33 && grade<=60){
+        return console.log("C");
+        
+    }
+    else if(grade<33){
+        return console.log("FAIL");
+        
+    }
+    else{
+        return console.log("invalid number");
+    }
+}
+gradeSystem(13)

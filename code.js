@@ -1,340 +1,247 @@
-// // program for check number is prime or not 
+// Program 1: Check if a number is prime or not
+let PrimeNumCheck = (n) => {
+    if (n <= 1) {
+        return console.log("Not a prime number");
+    }
+    let square = Math.sqrt(n);
+    for (let i = 2; i <= square; i++) {
+        if (n % i === 0) {
+            return console.log("Not a prime number");
+        }
+    }
+    return console.log("Prime number");
+};
+// PrimeNumCheck(11);
 
-// let PrimeNumCheck = (n)=>{
-//     if(n<=1){
-//         return console.log("not a prime number");
-//     }
-//     let squre = Math.sqrt(n);
-//     // let i = 2
-//     // while(i<=squre){
-//     //     if(n%i==0){
-//     //         return console.log("not a prime number");
-//     //     }
-//     //     i++;    
-//     // }
-//     for(let i = 2;i<=squre;i++){
-//         if(n%i==0){
-//             return console.log("not a prime number");
-//         }
-//     }
-//    return console.log("prime number");
-// }
-// // PrimeNumCheck(11)
-// // let sumOfnatural = (n)=>{
-// //    let sum = (n*(n+1))/2
-// //    return sum;
-// // }
-// // console.log(sumOfnatural(12345678910));
-// // let sum = 0
-// // let sumof = (n)=>{
-// //     for(let i = 0;i<=n;i++){
-// //        sum = sum+i
-// //     }
-// //     return sum;
-// // }
-// // console.log(sumof(12345678910));
-// //  program to print Fibanacci Sequence by using iteration
+// Program 2: Calculate the sum of natural numbers
+let sumOfNatural = (n) => {
+    let sum = (n * (n + 1)) / 2;
+    return sum;
+};
+// console.log(sumOfNatural(12345678910));
 
-// let FibanacciSequence = (n)=>{
-//     if(n==1){
-//         console.log(0);
-//     }
-//     else if(n==1){
-//         console.log(0);
-//         console.log(1);  
-//     }
-//     else{
-//         let a = 0;
-//         let b = 1;
-//         console.log(0);
-//         console.log(1);
-//         n = n-2;
-//         while(n){
-//             c = a+b;
-//             console.log(c);      
-//             a = b
-//             b = c;
-//             n = n-1
-//         }
-//     }
-// }
+// Program 3: Calculate the sum using iteration
+let sum = 0;
+let sumOf = (n) => {
+    for (let i = 0; i <= n; i++) {
+        sum = sum + i;
+    }
+    return sum;
+};
+// console.log(sumOf(12345678910));
 
-// // FibanacciSequence()
-// console.log();
+// Program 4: Generate Fibonacci sequence using iteration
+let FibonacciSequence = (n) => {
+    if (n === 1) {
+        console.log(0);
+    } else if (n === 2) {
+        console.log(0);
+        console.log(1);
+    } else {
+        let a = 0, b = 1;
+        console.log(a);
+        console.log(b);
+        n -= 2;
+        while (n) {
+            let c = a + b;
+            console.log(c);
+            a = b;
+            b = c;
+            n -= 1;
+        }
+    }
+};
+// FibonacciSequence(10);
 
-
-
-// // lowest common factor
-
-let lcmcalculate = (a,b)=>{
-    if(a==b){
+// Program 5: Calculate the LCM of two numbers
+let lcmCalculate = (a, b) => {
+    if (a === b) {
         return a;
     }
-    let max;
-    if(a>b){
-        max = a;
-    }
-    else{
-        max = b;
-    }
+    let max = a > b ? a : b;
     let i = max;
-    while(true){
-       if(max%a==0 && max%b==0){
-        return max;
-       }
-       max =  max+i;
+    while (true) {
+        if (max % a === 0 && max % b === 0) {
+            return max;
+        }
+        max += i;
     }
-}
+};
+// console.log(lcmCalculate(12, 10));
 
-// console.log(lcmcalculate(12,10))
+// Program 6: Check if a number is automorphic
+let automorphic = (n) => {
+    let square = n * n;
+    while (n) {
+        if (n % 10 !== square % 10) {
+            return false;
+        }
+        n = Math.floor(n / 10);
+        square = Math.floor(square / 10);
+    }
+    return true;
+};
+// let ans = automorphic(5);
+// console.log(ans ? "Automorphic" : "Not Automorphic");
 
-// // program for check automafic number 
-
-// let marfic = (n)=>{
-//     let square = n*n;
-//     while(n){
-//         if(n%10 != square%10){
-//             return false;
-//         }
-//         n = Math.floor(n/10);
-//         square =Math.floor(square/10);
-//     }
-//     return true;
-// }
-
-// let ans = marfic(5)
-// if(ans){
-//     console.log("automarfic");
-// }
-// else{
-//     console.log("not automarfic");
-// }
-
-let sumofdigit = (n)=>{
+// Program 7: Sum of digits of a number
+let sumOfDigits = (n) => {
     let sum = 0;
-    while(n){
-       let b= Math.floor(n%10);
-        sum+=b;
-        n = Math.floor(n/10);
+    while (n) {
+        sum += Math.floor(n % 10);
+        n = Math.floor(n / 10);
     }
     return sum;
 };
 
-let checknumevenodd = (n)=>{
-    if(n%2==0){
-        return true;
-    }
-    else{
-        return false;
-    }
-}
+// Program 8: Check if a number is even or odd
+let checkNumEvenOdd = (n) => {
+    return n % 2 === 0;
+};
 
-let productofnum = (n)=>{
-   let product = 1;
-    while(n){
-       let b = Math.floor(n%10);
-        product*=b;
-        n = Math.floor(n/10);
+// Program 9: Product of digits of a number
+let productOfNum = (n) => {
+    let product = 1;
+    while (n) {
+        product *= Math.floor(n % 10);
+        n = Math.floor(n / 10);
     }
     return product;
-}
+};
 
-let program = (n)=>{
-    if(checknumevenodd(n)){
-        let sum = sumofdigit(n);
-        if(checknumevenodd(sum)){
-            console.log("even");      
-        }
-        else{
-            console.log("odd");          
-        }
+// Program 10: Check conditions based on sum/product of digits
+let program = (n) => {
+    if (checkNumEvenOdd(n)) {
+        let sum = sumOfDigits(n);
+        console.log(checkNumEvenOdd(sum) ? "Even" : "Odd");
+    } else {
+        console.log(checkNumEvenOdd(productOfNum(n)) ? "Even" : "Odd");
     }
-    else{
-        // let product = productofnum(n);
-        if(checknumevenodd(productofnum(n))){
-            console.log("even");      
-        }
-        else{
-            console.log("odd");      
-        }
-    }
-}
-
+};
 // program(3);
 
-
-let reverse = (n)=>{
-    let reverse = 1;
-    while(n){
-         let b = Math.floor(n%10);
-         reverse = (reverse*10)+b;
-         n = Math.floor(n/10);
+// Program 11: Reverse a number
+let reverse = (n) => {
+    let reversed = 0;
+    while (n) {
+        reversed = reversed * 10 + Math.floor(n % 10);
+        n = Math.floor(n / 10);
     }
-    return reverse
-}
-let palindrone = (n)=>{
-   let rev = reverse(n);
-   if(rev == n){
-    return true;
-   }
-   else{
-    return false;
-   }
-}
+    return reversed;
+};
 
-let prime = (n)=>{
-    if(n<=1){
+// Program 12: Check if a number is a palindrome
+let palindrome = (n) => {
+    return reverse(n) === n;
+};
+
+// Program 13: Check if a number is prime
+let prime = (n) => {
+    if (n <= 1) {
         return false;
     }
-    let sqare = Math.floor(Math.sqrt(n));
-    for(let i =2;i<=sqare;i++){
-        if(n%i==0){
+    let square = Math.floor(Math.sqrt(n));
+    for (let i = 2; i <= square; i++) {
+        if (n % i === 0) {
             return false;
         }
     }
     return true;
-}
+};
 
-
-let program2 = (n)=>{
-    if(palindrone(n)){
-        // let sum = sumofdigit(n);
-        if(prime(sumofdigit(n))){
-            return true;
-        }
-        else{
-            return false;
-        }
+// Program 14: Complex conditions with palindrome and prime checks
+let program2 = (n) => {
+    if (palindrome(n)) {
+        return prime(sumOfDigits(n));
+    } else {
+        return prime(reverse(n));
     }
-    else
-    {
-        let rever = reverse(n);
-        if(prime(rever)){
-            return true;
-        }
-        else{
-            return false
-        }
-    }
-}
+};
 // console.log(program2(24));
 
+// Program 15: Check if a number is a spy number
+let spyNumber = (n) => {
+    return productOfNum(n) === sumOfDigits(n);
+};
+// console.log(spyNumber(22));
 
-//  program 3
-
-let spynumber = (n)=>{
-    if(productofnum(n) == sumofdigit(n)){
-        return true;
+// Program 16: Count digits in a number
+let counter = (n) => {
+    let count = 0;
+    while (n) {
+        n = Math.floor(n / 10);
+        count++;
     }
-    else{
-        return false;
-    }
-}
-// console.log(spynumber(22));
-let counter = (n)=>{ 
- let count = 0;
-   while(n){
-    n = Math.floor(n/10)
-    count++
-   }
     return count;
-}
+};
 
-let armstrong = (n)=>{
-    let original = n;
-    let count = counter(n)
-    let answer = 0;
-    while(n){
-        let b = Math.floor(n%10);
-        answer = answer +Math.pow(b,count)
-        n = Math.floor(n/10);
+// Program 17: Check if a number is an Armstrong number
+let armstrong = (n) => {
+    let original = n, count = counter(n), answer = 0;
+    while (n) {
+        let digit = Math.floor(n % 10);
+        answer += Math.pow(digit, count);
+        n = Math.floor(n / 10);
     }
-    if(answer==original){
-        return true
-    }
-    else{
-        return false;
-    }
-}
+    return answer === original;
+};
 
-let program3 = (n)=>{
-    if(spynumber(n)){
-        let sum = sumofdigit(n);
-        if(checknumevenodd(sum)){
-            if(armstrong(sum)){
-                return true;
-            }
-            else{
-                return false;
-            }
+// Program 18: Complex conditions with spy and Armstrong numbers
+let program3 = (n) => {
+    if (spyNumber(n)) {
+        let sum = sumOfDigits(n);
+        if (checkNumEvenOdd(sum)) {
+            return armstrong(sum);
+        } else {
+            return prime(sum);
         }
-        else{
-            if(prime(sum)){
-                return true;
-            }
-            else{
-                return false;
-            }
+    } else {
+        let product = productOfNum(n);
+        if (checkNumEvenOdd(product)) {
+            return armstrong(product);
+        } else {
+            return prime(product);
         }
     }
-    else{
-        let produ = productofnum(n);
-        if(checknumevenodd(produ)){
-            if(armstrong(produ)){
-                return true;
-            }
-            else{
-                return false;
-            }
-        }
-        else{
-            if(prime(produ)){
-                return true;
-            }
-            else{
-                return false;
-            }
-        }
-    }
-}
+};
 // console.log(program3(22));
 
+// Program 19: Factorial of a number
+let factorial = (n) => {
+    return n <= 1 ? 1 : n * factorial(n - 1);
+};
 
-// progrM3
+// Program 20: Complex condition using factorial and LCM
+let program4 = (n) => {
+    let fact = factorial(n);
+    return prime(lcmCalculate(fact, 10));
+};
 
-let fect = (n)=>{
-    if(n==0 || n==1){
-        return 1;
-    }
-    else{
-        return n*fect(n-1);
-    }
-}
-
-let program4= (n)=>{
-    let fact = fect(n);
-    let lcm = lcmcalculate(fact,10);
-    if(prime(lcm)){
-        return true;
-    }
-    else{
-        return false;
-    }
-}
-
-// nth number of prime number
-let nthPrime = (n)=>{
-    let count = 0;
-    let x = 2;
-    while(true){
-        if(prime(x)){
-            count++
+// Program 21: Find the nth prime number
+let nthPrime = (n) => {
+    let count = 0, x = 2;
+    while (true) {
+        if (prime(x)) {
+            count++;
         }
-        if(count == n){
+        if (count === n) {
             return x;
         }
         x++;
     }
-}
+};
+// console.log(nthPrime(4));
 
-console.log(nthPrime(4));
+// Program 22: Find the nth Fibonacci number
+let nthFibonacciNumber = (n) => {
+    if (n === 1) return 0;
+    if (n === 2) return 1;
+    let a = 0, b = 1, c;
+    for (let i = 3; i <= n; i++) {
+        c = a + b;
+        a = b;
+        b = c;
+    }
+    return b;
+};
+// console.log(nthFibonacciNumber(10));

@@ -240,7 +240,7 @@
 
         
         
-# sum of array element 
+#17. sum of array element 
 # cook your dish here
 # def sumOfArry(n,arr):
 #     sum = 0;
