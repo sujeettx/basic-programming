@@ -251,3 +251,42 @@
 # arr = list(map(int,input().split()))
 # ans = sumOfArry(n,arr)
 # print(ans)
+
+
+# binaray search
+
+# def binarySearch(n, arr,x):
+#     start = 0
+#     end = n-1
+#     mid = (start+end)//2
+    
+#     while(start<=end):
+#         if(x == arr[mid]):
+#             return True
+#         elif(x>arr[mid]):
+#             start = mid+1;
+#             mid = (start+end)//2
+#         else:
+#             end = mid-1
+#             mid = (start+end)//2
+#     return False
+    
+# n,x = map(int,input().split())
+# arr = list(map(int,input().split()))
+
+# print(binarySearch(n,arr,x))
+
+        
+# selection sort 
+# def selectionSort(n, arr):
+#     for i in range(0,n,1):
+#         for j in range(i+1,n,1):
+#             if(arr[i]>arr[j]):
+#                 arr[i],arr[j] = arr[j],arr[i]
+    
+    
+# n = int(input())
+# arr = list(map(int,input().split()))
+
+# selectionSort(n,arr)
+# print(arr)

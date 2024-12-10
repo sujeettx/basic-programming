@@ -130,4 +130,13 @@ let gradeSystem = (grade)=>{
         return console.log("invalid number");
     }
 }
-gradeSystem(13)
+// gradeSystem(13)
+
+
+// nthfibonacci program using recursion
+
+let fibonacci = (n)=>{
+    return (n<=1)? n : fibonacci(n-1)+fibonacci(n-2)
+}
+
+console.log(fibonacci(10));

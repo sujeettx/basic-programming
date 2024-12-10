@@ -245,3 +245,71 @@ let nthFibonacciNumber = (n) => {
     return b;
 };
 // console.log(nthFibonacciNumber(10));
+
+
+// sunny number 
+
+let sunnyNumber = (n)=>{
+    let sunny = Math.sqrt((n+1));
+    return sunny == Math.floor(sunny);
+}
+
+// console.log(sunnyNumber(3));
+
+
+
+
+// number is present in fibonacci serires or not 
+
+let check = (n)=>{
+    let a = Math.sqrt((5*n*n-4))
+    let b = Math.sqrt((5*n*n+4))
+
+    return a== Math.floor(a) || b == Math.floor(b)
+}
+
+// console.log(check(20));
+
+
+
+let fibs = (n)=>{
+    if(n==1){
+        console.log(0);
+        
+    }
+    if(n==2){
+        console.log(0,1);
+        
+    }
+    else{
+        let a = 0,b=1,c;
+        console.log(0);
+        console.log(1);
+        n=  n-2
+        while(n){
+            c = a+b;
+            console.log(c);
+            a = b
+            b= c   
+            n= n-1
+        }        
+    }
+}
+// fibs(4);
+
+
+fibb = (n)=>{
+    if(n==1) return 0
+    if(n==2) return 1
+    let a = 0,b = 1,c;
+
+    for(let i = 3;i<=n;i++){
+        c = a+b;
+        a = b
+        b = c
+    }
+    return b
+}
+
+console.log(fibb(9));
+
