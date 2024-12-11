@@ -1,16 +1,16 @@
-// Import required functions from another file
-import { 
-    prime, 
-    palindrome, 
-    sumOfDigits, 
-    reverse, 
-    checkNumEvenOdd, 
-    productOfNum, 
-    spyNumber, 
-    factorial, 
-    lcmCalculate, 
-    armstrong 
-} from './basicQuestions';
+const {
+    palindrome,
+    prime,
+    sumOfDigits,
+    reverse,
+    checkNumEvenOdd,
+    productOfNum,
+    spyNumber,
+    factorial,
+    lcmCalculate,
+    armstrong
+} = require('./basicQuestion');
+
 
 // Program 1: Complex conditions with palindrome and prime checks
 let program1 = (n) => {
@@ -20,7 +20,7 @@ let program1 = (n) => {
         return prime(reverse(n));
     }
 };
-// console.log(program1(24));
+// console.log(program1(111));
 
 // Program 2: Complex conditions with spy and Armstrong numbers
 let program2 = (n) => {
