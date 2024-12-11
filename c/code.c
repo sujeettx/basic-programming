@@ -1,4 +1,4 @@
-// // 1. Program for swapping two numbers with the help of a third variable
+ // 1. Program for swapping two numbers with the help of a third variable
 // #include<stdio.h>
 // void swap(int a, int b) {
 //     int c;
@@ -14,7 +14,7 @@
 //     return 0;
 // }
 
-// // 2. Program for swapping two numbers without a third variable
+ // 2. Program for swapping two numbers without a third variable
 // #include<stdio.h>
 // void swap(int a, int b) {
 //     a = a + b;
@@ -29,7 +29,7 @@
 //     return 0;
 // }
 
-// // 3. Program for swapping two numbers using XOR operator
+ // 3. Program for swapping two numbers using XOR operator
 // #include<stdio.h>
 // void swap(int a, int b) {
 //     a = a ^ b;
@@ -44,7 +44,7 @@
 //     return 0;
 // }
 
-// // 4. Program for swapping three numbers without a third variable
+ // 4. Program for swapping three numbers without a third variable
 // #include<stdio.h>
 // void swap(int a, int b, int c) {
 //     a = a + b + c;
@@ -60,7 +60,7 @@
 //     return 0;
 // }
 
-// // 5. Program to check if a year is a leap year or not
+ // 5. Program to check if a year is a leap year or not
 // #include<stdio.h>
 // void checkYear(int year) {
 //     if(year % 400 == 0) {
@@ -80,7 +80,7 @@
 //     return 0;
 // }
 
-// // 6. Program for sum of digits of a number
+ // 6. Program for sum of digits of a number
 // #include<stdio.h>
 // int sumOfDigit(int num) {
 //     int b, sum = 0;
@@ -99,7 +99,7 @@
 //     return 0;
 // }
 
-// // 7. Program to reverse a number
+ // 7. Program to reverse a number
 // #include<stdio.h>
 // int reverseNum(int num) {
 //     int b, reversedNumBer = 0;
@@ -118,7 +118,7 @@
 //     return 0;
 // }
 
-// // 8. Program to check if a number is a palindrome
+ // 8. Program to check if a number is a palindrome
 // #include<stdio.h>
 // #include<stdbool.h>
 // int checkPalindrome(int num) {
@@ -148,7 +148,7 @@
 //     return 0;
 // }
 
-// // 9. Program to calculate the factorial of a number
+ // 9. Program to calculate the factorial of a number
 // #include<stdio.h>
 // int fact(int num) {
 //     if(num == 0) {
@@ -164,7 +164,7 @@
 //     return 0;
 // }
 
-// // 10. Program to check if a number is a strong number
+ // 10. Program to check if a number is a strong number
 // #include<stdio.h>
 // #include<stdbool.h>
 // int fact(int num) {
@@ -195,7 +195,7 @@
 //     return 0;
 // }
 
-// // 11. Program to check if a number is even or odd
+ // 11. Program to check if a number is even or odd
 // #include<stdio.h>
 // #include<stdbool.h>
 // bool checkNum(int n) {
@@ -213,7 +213,7 @@
 //     return 0;
 // }
 
-// // 12. Program to calculate the product of the digits of a number
+// 12. Program to calculate the product of the digits of a number
 // #include<stdio.h>
 // int productNum(int n) {
 //     int b, value = 1;
@@ -232,7 +232,7 @@
 //     return 0;
 // }
 
-// // 13. Program to check if a number is a SPY number
+ // 13. Program to check if a number is a SPY number
 // #include<stdio.h>
 // #include<stdbool.h>
 // bool SpyNum(int n) {
@@ -257,7 +257,7 @@
 //     return 0;
 // }
 
-// // 14. Program to check if a number is an Armstrong number
+ // 14. Program to check if a number is an Armstrong number
 // #include<stdio.h>
 // #include<math.h>
 // #include<stdbool.h>
@@ -295,7 +295,7 @@
 //     return 0;
 // }
 
-// // 15. Program to check if a number is a Disarium number
+ // 15. Program to check if a number is a Disarium number
 // #include<stdio.h>
 // #include<math.h>
 // #include<stdbool.h>
@@ -334,7 +334,7 @@
 //     return 0;
 // }
 
-// // 16. Program to check if a number is a Sunny number
+ // 16. Program to check if a number is a Sunny number
 // #include<stdio.h>
 // #include<math.h>
 // int main() {
@@ -351,7 +351,7 @@
 //     return 0;
 // }
 
-// // 17. Program to check if a number is a prime number
+ // 17. Program to check if a number is a prime number
 // #include<stdio.h>
 // #include<math.h>
 // #include<stdbool.h>
@@ -380,7 +380,7 @@
 //     return 0;
 // }
 
-// // 18. Program to print Fibonacci series
+// 18. Program to print Fibonacci series
 // #include<stdio.h>
 // void fibonacciSeries(int n) {
 //     if(n == 0) {
@@ -409,7 +409,7 @@
 //     return 0;
 // }
 
-// // 19. Program to check if a number is in the Fibonacci series
+// 19. Program to check if a number is in the Fibonacci series
 // #include<stdio.h>
 // #include<stdbool.h>
 // #include<math.h>
@@ -431,7 +431,7 @@
 //     return 0;
 // }
 
-// // 20. Program to calculate the sum of array elements
+// 20. Program to calculate the sum of array elements
 // #include<stdio.h>
 // int sumOfArray(int n, int arr[]) {
 //     int sum = 0;
@@ -452,3 +452,142 @@
 //     printf("Sum of array elements is %d", ans);
 //     return 0;
 // }
+
+// 21. selection sort function
+// #include<stdio.h>
+
+// void selectionSort(int n, int arr[]) {
+//     for (int i = 0; i < n; i++) {
+//         for (int j = i + 1; j < n; j++) {
+//             if (arr[i] > arr[j]) {
+//                 int temp = arr[i];
+//                 arr[i] = arr[j];
+//                 arr[j] = temp;
+//             }
+//         }
+//     }
+// }
+
+// int main() {
+//     int n;
+//     scanf("%d", &n);
+//     int arr[n];
+//     for (int i = 0; i < n; i++) {
+//         scanf("%d", &arr[i]);
+//     }
+//     selectionSort(n, arr);
+//     for (int i = 0; i < n; i++) {
+//         printf("%d ", arr[i]);
+//     }
+//     return 0;
+// }
+
+
+//22. binary search function
+// #include<stdio.h>
+// #include<stdbool.h>
+
+// bool binarySearch(int n, int arr[], int x) {
+//     int start = 0;
+//     int end = n - 1;
+//     int mid = (start + end) / 2;
+
+//     while (start <= end) {
+//         if (x == arr[mid]) {
+//             return true;
+//         } else if (x > arr[mid]) {
+//             start = mid + 1;
+//             mid = (start + end) / 2;
+//         } else {
+//             end = mid - 1;
+//             mid = (start + end) / 2;
+//         }
+//     }
+//     return false;
+// }
+
+// int main() {
+//     int n, x;
+//     scanf("%d %d", &n, &x);
+//     int arr[n];
+//     for (int i = 0; i < n; i++) {
+//         scanf("%d", &arr[i]);
+//     }
+//     if (binarySearch(n, arr, x)) {
+//         printf("True\n");
+//     } else {
+//         printf("False\n");
+//     }
+//     return 0;
+// }
+
+// 23 find nthPrime number 
+#include <stdio.h>
+#include <stdbool.h>
+#include <math.h>
+
+int nthPrime(int n) {
+    int count = 0, x = 2;
+    while (1) {
+        if (CheckPrime(x)) {
+            count++;
+        }
+        if (count == n) {
+            return x;
+        }
+        x++;
+    }
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    printf("%d\n", nthPrime(n));
+    return 0;
+}
+
+//24. nth fibonacci number 
+#include <stdio.h>
+
+int nthFibonacciNumber(int n) {
+    if (n == 1) return 0;
+    if (n == 2) return 1;
+    int a = 0, b = 1, c;
+    for (int i = 3; i <= n; i++) {
+        c = a + b;
+        a = b;
+        b = c;
+    }
+    return b;
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    printf("%d\n", nthFibonacciNumber(n));
+    return 0;
+}
+
+// 25 .two numbers lcm
+#include <stdio.h>
+
+int lcmCalculate(int a, int b) {
+    if (a == b) {
+        return a;
+    }
+    int max = (a > b) ? a : b;
+    int i = max;
+    while (1) {
+        if (max % a == 0 && max % b == 0) {
+            return max;
+        }
+        max += i;
+    }
+}
+
+int main() {
+    int a, b;
+    scanf("%d %d", &a, &b);
+    printf("LCM of %d and %d is %d\n", a, b, lcmCalculate(a, b));
+    return 0;
+}
