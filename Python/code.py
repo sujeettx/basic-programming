@@ -253,7 +253,7 @@
 # print(ans)
 
 
-# binaray search
+#18 binaray search
 
 # def binarySearch(n, arr,x):
 #     start = 0
@@ -277,7 +277,7 @@
 # print(binarySearch(n,arr,x))
 
         
-# selection sort 
+# 19. selection sort 
 # def selectionSort(n, arr):
 #     for i in range(0,n,1):
 #         for j in range(i+1,n,1):
