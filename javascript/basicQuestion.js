@@ -302,17 +302,20 @@ function lcmCalculate(a, b) {
 
 
 
+// 26. program for bubble sort function
+// 27. check how many prime numbers present in the array
 
-
-
-
-
-
-
-
-
-
-
+let PrimeinArray = (arr)=>{
+    let count = 0;
+    for(let i=0; i<arr.length; i++){
+        if(CheckPrime(arr[i])){
+            count++;
+        }
+    }
+    return count;
+}
+let arr = [1,2,3,4,5,6,7,8]
+console.log(PrimeinArray(arr));
 
 
 
