@@ -1,0 +1,1 @@
+// take a array as input and check how many pairs is prime 
